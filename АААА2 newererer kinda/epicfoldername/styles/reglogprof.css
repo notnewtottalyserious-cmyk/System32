@@ -1,0 +1,71 @@
+.inputs{
+    width: 50%;
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.inputs ul {
+    width: 100%;
+    list-style: none;
+    line-height: 40px;
+}
+.inputs label {
+    padding: 5px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 6px;
+}
+.inputs input {
+    border: none;
+}
+.inputs a {
+    text-decoration: none;
+    color: #0099f7;
+    padding: 8px;
+    float: right;
+}
+.inputs button {
+    padding: 8px;
+    background-color: #0099f7;
+    color: white;
+    border: black 1px solid;
+    border-radius: 6px;
+}
+.inputs button:hover {
+    background-color: #0069aa;
+}
+
+.icons ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.icons li {
+    margin-right: 12px;
+}
+
+.icons img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.content{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.reg {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.reg div {
+    width: fit-content;
+}
+
+.inputs img {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}

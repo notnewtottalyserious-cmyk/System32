@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абита</title>
+    <link rel="stylesheet" href="styles/teet.css">
+    <link rel="stylesheet" href="styles/carsadd.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <header >
+            <div class="logo">
+                <img src="cooleravit.png" alt="AVITO">
+                <span><h1><a href="teet.html" class="link">Avito 2.0</a></h1></span>
+            </div>
+        </header>
+
+        <aside class="sidebar" style="align-self:flex-start;" id="moving-object">
+            <nav>
+                <ul>
+                    <li><a href="#devices"> <img src="cats/mach.png" alt=""> Оборудо­вание</a></li>
+                    <li><a href="#apartments"><img src="cats/build.png" alt="">Помещения</a></li>
+                    <li><a href="#products"><img src="cats/prod.png" alt="">Товары</a></li>
+                    <li><a href="cars.html"><img src="cats/car.png" alt="">Транспорт</a></li>
+                    <li><a href="#services"><img src="cats/help.png" alt="">Услуги</a></li>
+                    <li><a href="#people"><img src="cats/peop.png" alt="">Сотрудники</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul id="left">
+                    <li>
+                        <img src="cats/fence.png" alt="">
+                        <a href="#fence"><p>Забор</p></a>
+                    </li>
+                    <li>
+                        <img src="cats/disco.png" alt="">
+                        <a href="#disco"><p>Ручнодиско</p></a>
+                    </li>
+                    <li>
+                        <img src="cats/wait.png" alt="">
+                        <a href="#wait"><p>Ожидания</p></a>
+                    </li>
+                    <li>
+                        <img src="cats/IHelp.png" alt="">
+                        <a href="#notsohelpfultbh"><p>#яМешаю</p></a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="content-section">
+                <h2>АВИТО 2.0!</h2>
+                <p>Добро пожаловать в наш "оригинальный" магазин!</p>
+            </section>
+
+            <section class="content-section" style="background:0%;">
+                <ul><h2 style="text-align: center;"></h2>
+                    <img src="images/banner.png" alt="BANNER" style="
+                    width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 4px;
+            margin-bottom: 10px;">
+                </ul>
+            </section>
+            <!-- Поисковая панель -->
+            <section class="content-section">
+                <div class="search-container">
+                    <h3>Поиск товаров</h3>
+                    <p>Используйте теги, категории, названия и другое для поиска товаров!</p>
+                    
+                    <div class="search-box">
+                        <input type="text" 
+                               class="search-input" 
+                               id="searchInput"
+                               placeholder="Например: 'электроника до 1000 рублей' или 'одежда для спорта'"
+                               onkeypress="handleSearchKeypress(event)">
+                        <button class="search-button" id="searchButton" onclick="performAISearch()">
+                            <span id="searchText">Найти</span>
+                            <span id="searchLoader" class="loading" style="display: none;"></span>
+                        </button>
+                    </div>
+
+                    <div class="ai-suggestions" id="aiSuggestions" style="display: none;">
+                        <h4>Рекомендации:</h4>
+                        <div class="suggestion-tags" id="suggestionTags"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2>Каталог всех товаров</h2>
+                    <div class="results-info" id="resultsInfo"></div>
+                </div>
+                <div class="products" id="productsContainer">
+                    <!-- Товары появятся здесь -->
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 1997</p>
+        </footer>
+    </div>
+
+    <script src="script/test.js">
+        </script>
+</body>
+</html>

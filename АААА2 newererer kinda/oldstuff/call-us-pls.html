@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Мир программистов</title>
+    <link rel="stylesheet" href="contact-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="https://avatars.mds.yandex.net/i?id=1a374f541278089b09296b0cea712e09_l-5234162-images-thumbs&n=13" alt="Логотип">
+                <span><h1><a href="index.html" class="link">Мир программистов</a></h1></span>
+            </div>
+            <div class="banner">Свяжитесь с нами</div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Поиск программистов...">
+                <button id="searchButton">Найти</button>
+            </div>
+        </header>
+        
+        <div class="main-container">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="main.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="stuff.html">Услуги</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main class="content">
+                <!-- Заголовок страницы -->
+                <div class="section">
+                    <h1 class="page-title">Мы рады вам помочь</h1>
+                    <p class="page-subtitle">Нам нравится создавать вещи. Не бойтесь сказать нам привет</p>
+                </div>
+
+                <!-- Основной контент контактов -->
+                <div class="section">
+                    <div class="contacts-container">
+                        <!-- Левая часть - форма -->
+                        <div class="contact-form-section">
+                            <h2 class="section-title">Напишите нам</h2>
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Ваше имя *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contact">Email или телефон *</label>
+                                    <input type="text" id="contact" name="contact" required 
+                                           placeholder="example@email.ru или 8 (900) 123-45-67">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Сообщение *</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                
+                                <!-- Панель форматирования текста -->
+                                <div class="text-formatting">
+                                    <button type="button" class="format-btn" data-format="bold" title="Жирный">B</button>
+                                    <button type="button" class="format-btn" data-format="italic" title="Курсив">I</button>
+                                    <button type="button" class="format-btn" data-format="strike" title="Зачёркнутый">S</button>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn">Отправить сообщение</button>
+                            </form>
+                        </div>
+                        
+                        <!-- Правая часть - контактная информация -->
+                        <div class="contact-info-section">
+                            <h2 class="section-title">Наши контакты</h2>
+                            
+                            <div class="contact-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="contact-icon">
+                                <div>
+                                    <h3>Наш Email</h3>
+                                    <p>Example.Email@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/126/126509.png" alt="Телефон" class="contact-icon">
+                                <div>
+                                    <h3>Наш Телефон</h3>
+                                    <p>8 (800) 555-35-35</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <img src="https://cdn-icons-png.flaticon.com/512/684/684809.png" alt="Местоположение" class="contact-icon">
+                                <div>
+                                    <h3>Местоположение</h3>
+                                    <p>г. Саратов, ул. Политехническая, 77<br>ЭТИ СГТУ имени Гагарина Ю.А.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Социальные сети -->
+                            <div class="social-section">
+                                <h3>Мы в социальных сетях</h3>
+                                <div class="social-links">
+                                    <a href="https://youtube.com" target="_blank" class="social-link">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+                                    </a>
+                                    <a href="https://telegram.org" target="_blank" class="social-link">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+                                    </a>
+                                    <a href="https://vk.com" target="_blank" class="social-link">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" alt="VKontakte">
+                                    </a>
+                                    <a href="https://github.com" target="_blank" class="social-link">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>Copyright &copy; 2025 Мир программистов</p>
+        </footer>
+    </div>
+
+    <script src="contact-script.js"></script>
+</body>
+</html>

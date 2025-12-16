@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../styles/teet.css">
+    <link rel="stylesheet" href="../styles/reglogprof.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../cooleravit.png" alt="AVITO">
+                <span><h1><a href="../teet.html" class="link">Avito 2.0</a></h1></span>
+            </div>
+        </header>
+
+        <aside class="sidebar" style="align-self:flex-start;" id="moving-object">
+            <nav>
+                <ul>
+                    <li><a href="#devices"> <img src="../cats/mach.png" alt=""> Оборудо­вание</a></li>
+                    <li><a href="#apartments"><img src="../cats/build.png" alt="">Помещения</a></li>
+                    <li><a href="#products"><img src="../cats/prod.png" alt="">Товары</a></li>
+                    <li><a href="cars.html"><img src="../cats/car.png" alt="">Транспорт</a></li>
+                    <li><a href="#services"><img src="../cats/help.png" alt="">Услуги</a></li>
+                    <li><a href="#people"><img src="../cats/peop.png" alt="">Сотрудники</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul id="left">
+                    <li>
+                        <img src="../cats/fence.png" alt="">
+                        <a href="#fence"><p>Забор</p></a>
+                    </li>
+                    <li>
+                        <img src="../cats/disco.png" alt="">
+                        <a href="#disco"><p>Ручнодиско</p></a>
+                    </li>
+                    <li>
+                        <img src="../cats/wait.png" alt="">
+                        <a href="#wait"><p>Ожидания</p></a>
+                    </li>
+                    <li>
+                        <img src="../cats/IHelp.png" alt="">
+                        <a href="#notsohelpfultbh"><p>#яМешаю</p></a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <section class="content-section">
+                <h1>Регистрация</h2>
+            </section>
+            <section class="content-section inputs reg">
+            <ul>
+                <li><label><input type="text" placeholder="Имя пользователя" id="username" autocomplete="additional-name"></label></li>
+                <li><label><input type="text" placeholder="Почта" id="login"></label></li>
+                <li><label><input type="text" placeholder="Телефон" id="phone"></label></li>
+                <li><label><input type="text" placeholder="Пароль" id="password"></label></li>
+                <li><label><input type="text" placeholder="Повторите пароль" id="repassword"></label></li>
+                <li><label><input type="file" accept="image/png, image/jpg, image/jpeg" id="icon"></li>
+                <li><button onclick="register()">Зарегистрироваться</button></li>
+            </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; 1997</p>
+        </footer>
+        
+    </div>
+    <script src="../script/regscript.js">
+        </script>
+</body>
+</html>

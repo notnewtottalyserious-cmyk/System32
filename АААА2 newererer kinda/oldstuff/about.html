@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Программисты Википедия</title>
+    <link rel="stylesheet" href="aboutstyles.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="logo">
+                <img src="https://avatars.mds.yandex.net/i?id=1a374f541278089b09296b0cea712e09_l-5234162-images-thumbs&n=13" alt="Ваш Логотип">
+                <span><h1><a href="index.html" class = "link">Мир программистов</a></h1></span>
+              </div>
+        <div class="banner">Информация о знаменитых программистах</div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск программистов...">
+            <button id="searchButton">Найти</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="stuff.html">Услуги</a></li>
+                    <li><a href="call-us-pls.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </aside>
+        </div>
+        <main class="content">
+            <!-- Слайдер авторов -->
+            <div class="slider">
+                <div class="slide active">
+                    <img src="https://avatars.mds.yandex.net/i?id=cb59109c2ed7b1d0088d72ea30b12f2ec93fa816-5865710-images-thumbs&n=13" alt="Иван Иванов" class="author-image">
+                    <h2 class="author-name">Иван Иванов</h2>
+                    <p class="author-role">Главный разработчик</p>
+                </div>
+                <div class="slide">
+                    <img src="https://avatars.mds.yandex.net/i?id=cb59109c2ed7b1d0088d72ea30b12f2ec93fa816-5865710-images-thumbs&n=13" alt="Петр Петров" class="author-image">
+                    <h2 class="author-name">Петр Петров</h2>
+                    <p class="author-role">Он тут есть</p>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-btn prev">‹</button>
+                    <button class="slider-btn next">›</button>
+                </div>
+            </div>
+            
+            <!-- Название учреждения -->
+            <div class="section">
+                <div class="institution">
+                    ЭТИ СГТУ имени Гагарина Ю.А.
+                </div>
+            </div>
+            
+            <!-- Схема работы -->
+            <div class="section">
+                <h2 class="section-title">Схема работы</h2>
+                <div class="work-scheme">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3 class="step-title">Анализ</h3>
+                        <p>Изучаем требования и цели проекта</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3 class="step-title">Проектирование</h3>
+                        <p>Создаем архитектуру и дизайн решения</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3 class="step-title">Разработка</h3>
+                        <p>Реализуем проект по современным стандартам</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3 class="step-title">Тестирование</h3>
+                        <p>Проверяем качество и функциональность</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <h3 class="step-title">Поддержка</h3>
+                        <p>Обеспечиваем дальнейшее развитие проекта</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Отзывы -->
+            <div class="section">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews" id="reviewsContainer">
+                    <!-- Отзывы будут сгенерированы JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Информация о сайте -->
+            <div class="section">
+                <h2 class="section-title">О нашем сайте</h2>
+                <div class="about-info">
+                    <p>Наш сайт предоставляет информацию о знаменитых программистах со всего мира. 
+                    Мы собираем и систематизируем данные из открытых источников, чтобы сделать 
+                    знания о великих IT-специалистах доступными для всех желающих.</p>
+                    <p>Наша миссия - вдохновлять новое поколение разработчиков и сохранять 
+                    историю развития компьютерных технологий.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <p>Copyright &copy; 2025</p>
+    </footer>
+
+    <script src="aboutscript.js">
+        
+    </script>
+</body>
+</html>

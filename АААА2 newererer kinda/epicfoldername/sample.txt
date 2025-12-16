@@ -1,0 +1,24 @@
+try {
+        const response = await fetch('producttest.json');
+        const rawData = await response.json();
+
+        allProducts = rawData.map(item => ({
+            id: item.id,
+            title: item.title || 'Без названия',
+            price: item.price || 0,
+            originalPrice: item.originalPrice || 0,
+            image: Array.isArray(item.image) ? item.image[0] 
+                   : item.image || 'images/default-image.png',
+            description: item.description || '',
+            category: item.category || 'other',
+            rating: item.rating?.rate || 0,
+            features: item.features || [],
+            creationAt: Date(item.creationAt) || "Неизвестно"
+        }));
+
+        displayProducts(allProducts);
+    } catch (error) {
+        console.error('Не удалось загрузить товары:', error);
+        allProducts = [];
+        displayProducts([]);
+    }

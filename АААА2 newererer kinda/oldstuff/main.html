@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="mainstyles.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="logo">
+                <img src="https://avatars.mds.yandex.net/i?id=1a374f541278089b09296b0cea712e09_l-5234162-images-thumbs&n=13" alt="Ваш Логотип">
+                <span><h1><a href="index.html" class = "link">Мир программистов</a></h1></span>
+              </div>
+        <div class="banner">Информация о знаменитых программистах</div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск программистов...">
+            <button id="searchButton">Найти</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="stuff.html">Услуги</a></li>
+                    <li><a href="call-us-pls.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </aside>
+        </div>
+        <main class="content">
+            <div id="programmersContainer" class="programmers-grid">
+                <div class="loading">Загрузка информации о программистах...</div>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <p>Copyright &copy; 2025</p>
+    </footer>
+
+    <script src="mainscript.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Максим",
+    "email": "guacomolli",
+    "phone": "886689966",
+    "password": "12341234",
+    "joinDate": 10499235,
+    "ordersCount": 20,
+    "totalSpent": 460
+  },
+  {
+    "id": 2,
+    "name": "Илюха",
+    "email": "flamingo",
+    "phone": "27384954387",
+    "password": "0394658",
+    "joinDate": 8752043939,
+    "ordersCount": 534,
+    "totalSpent": 437435
+  },
+  {
+    "id": 3,
+    "name": "Наташа",
+    "email": "gollub",
+    "phone": "89535387243",
+    "password": "hui234op",
+    "joinDate": 983475894,
+    "ordersCount": 346,
+    "totalSpent": 23456978
+  }
+]
